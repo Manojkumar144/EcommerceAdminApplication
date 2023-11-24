@@ -1,0 +1,24 @@
+<%- include('includes/head.ejs') %>
+    <link rel="stylesheet" href="/css/forms.css">
+    <link rel="stylesheet" href="/css/contact.css">
+
+</head>
+
+<body>
+   <%- include('includes/navigation.ejs') %>
+
+    <main>
+        <form class="contact" action="/success" method="GET">
+            <h1>Book a Call</h1>
+            <p>Book a call slot, and our representative will call you within 1hr of the selected time.</p>
+            <hr>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+            <br>
+            <button  type="submit">GET A CALL</button>
+        </form>
+    </main>
+<%- include('includes/end.ejs') %>
