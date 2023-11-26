@@ -2,8 +2,7 @@ const fs = require('fs');
 const path = require('path');
 
 const p = path.join(
-  __dirname,
-  '..',
+  path.dirname(process.mainModule.filename),
   'data',
   'cart.json'
 );
